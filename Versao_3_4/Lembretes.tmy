@@ -1,0 +1,2 @@
+[{"Id":"OK"},{"Nome":"Lembretes.tmy"}]
+{ "campos": [{ "Nomestru" : "Id"  , "Nome" : "Id"  , "Tipo" : "number"  , "Tamanho" : "6" },{ "Nomestru" : "Descri"  , "Nome" : "Descricao"  , "Tipo" : "text"  , "Tamanho" : "45" },{ "Nomestru" : "DtLembrete"  , "Nome" : "Data do lembrete"  , "Tipo" : "date"  , "Tamanho" : "10" }] }
