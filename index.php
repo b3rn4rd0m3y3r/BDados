@@ -36,12 +36,13 @@
 		padding-top: 10px;
 		}
 	H1.grad {
-		background: linear-gradient(90deg, rgba(121,83,9,1) 3%, rgba(255,0,88,44) 50%, rgba(255,0,128,88) 75%, rgba(255,0,11,1) 100%);
+		background: linear-gradient(90deg, rgba(121,83,9,1) 3%, rgba(255,0,44,44) 30%, rgba(255,0,88,44) 50%, rgba(255,0,128,88) 75%, rgba(255,0,11,1) 100%);
 		border-radius: 8px;
 		color: palegoldenrod;
 		font-size: 24px;
 		padding: 10px;
-		width: 340px;
+		text-align: center;
+		width: 440px;
 		}
 </style>
 <script type="text/javascript" src="BMyFrmwk.js"></script>
@@ -66,6 +67,12 @@ function criaStru(){
 	var txtUrl = "TB_fields5.php?Banco="+nomeBD+"&Tabela="+nomeTB;
 	window.location = txtUrl;
 	}
+function listaTB(){
+	var nomeBD = (ob.getById("bd")).value;
+	var nomeTB = (ob.getById("tb")).value;
+	var txtUrl = "TB_list4.php?Tabela="+nomeTB;
+	window.location = txtUrl;
+	}
 </script>
 </head>
 <body>
@@ -74,6 +81,7 @@ function criaStru(){
 		<div><div onclick="criaBD();">Criação do Banco de Dados</div></div>
 		<div><div class="tb" onclick="criaTB();">Criação de Tabela</div></div>
 		<div><div class="stru" onclick="criaStru();">Criação da Estrutura das Tabelas</div></div>
+		<div><div class="tb" onclick="listaTB();">Lista uma Tabela</div></div>
 	</div>
 	<div id="dados">
 		<table>

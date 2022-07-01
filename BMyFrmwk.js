@@ -28,6 +28,11 @@ BMy.fn = BMy.prototype = {
 		var ret = NoCars <= tam ? txt.substr(tam-NoCars,NoCars):"";
 		return ret;
 		},
+	mid: function(txt,ini,NoCars) {
+		var tam = txt.length;
+		var ret = NoCars <= tam ? txt.substr(ini,NoCars):"";
+		return ret;
+		},
 	left: function(txt,NoCars){
 		var tam = txt.length;
 		var ret = NoCars <= tam ? txt.substr(0,NoCars):"";
